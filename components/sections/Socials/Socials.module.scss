@@ -1,0 +1,46 @@
+@import '/styles/helpers/vars';
+
+.socials {
+  padding: 1em 0em 4em 0em;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin-bottom: 2em;
+    margin-right: 2em;
+    opacity: 0;
+    transform: translateY(20px);
+
+    @for $i from 0 through 12 {
+      &:nth-child(#{$i}) {
+        &.isInView {
+          opacity: 1;
+          transform: translateY(0px);
+          transition: transform 400ms, opacity 400ms ease;
+          transition-delay: 60ms * $i;
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $green;
+    border-radius: 10px;
+    display: flex;
+
+    span {
+      margin-right: 10px;
+    }
+
+    svg {
+      transform: rotate(-45deg);
+    }
+  }
+}

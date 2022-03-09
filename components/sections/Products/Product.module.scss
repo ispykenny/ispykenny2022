@@ -1,0 +1,50 @@
+@import '/styles/helpers/vars.scss';
+.productCards {
+  img {
+    width: 100% !important;
+  }
+}
+
+.productCardsParent {
+  h2 {
+    font-family: ivypresto-display, serif;
+    font-size: 32px;
+    font-weight: 500;;
+  }
+}
+
+.productCards {
+  max-width: 700px;
+  margin-bottom: 3em;
+  padding-left: 1em;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 0%;
+    width: 2px;
+    background: $green;
+    position: absolute;
+    top: 0; left: -1px;
+    transition: height 1500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+
+  &__title {
+    font-size: 32px;
+    font-family: ivypresto-display, serif;
+  }
+}
+
+.isInView {
+  .productCards:after {
+    height: 100%;
+  }
+}
+
+@media(prefers-reduced-motion) {
+  .productCards:after {
+    transition-duration: 0ms;
+    height: 100%;
+  }
+}

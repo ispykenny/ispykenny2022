@@ -1,0 +1,23 @@
+@import '/styles/helpers/breakpoints';
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: auto;
+
+  &__inner {
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+  }
+}
+
+.shimmy {
+  margin-top: 8em;
+}
+
+@media(min-width: $bp-md) {
+  .shimmy {
+    margin-top: 12em;
+  }
+}

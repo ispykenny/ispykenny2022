@@ -1,0 +1,29 @@
+@import '/styles/helpers/easings';
+
+.sleeve {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.sleeveItem {
+  display: inline-block;
+  position: relative;
+  transform: translateY(150%);
+}
+
+.isInView {
+  
+  .sleeveItem {
+    transition: transform 1200ms $ease-out-circ;
+    transform: translateY(0%);
+  }
+}
+
+@media(prefers-reduced-motion) {
+  .sleeveItem {
+    transition: transform 0ms $ease-out-circ;
+    transition-delay: 0ms;
+    transform: translateY(0%);
+  }
+}

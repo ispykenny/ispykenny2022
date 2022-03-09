@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Pixels",
+    "description": "Pixels is an Adobe XD application that allows users to pull in beautiful Unsplash images into their design, without having to leave the Adobe product. Pixels is currently used by tens of thousands of people <strong>each</strong> <strong>month</strong> <strong>with</strong> <strong>an</strong> <strong>average</strong> <strong>of</strong> <strong>1.4</strong> <strong>million</strong> <strong>images</strong> <strong>being</strong> <strong>downloaded</strong> from this app into Adobe XD each month. This app was built using the <strong>Adobe</strong> <strong>XD</strong> <strong>API</strong>, <strong>Unsplash-API</strong>, with <strong>Vanilla</strong> <strong>JS</strong> and <strong>Node.js</strong>.",
+    "link": "https://adobe.com/go/cc_plugins_discover_plugin?pluginId=de6be381&workflow=share",
+    "image": "https://images.ctfassets.net/04iiozfw14yr/4vKqsYZK96gMlZnLGINonn/018e8eebb6a2ea8d77116077ef22fc0f/Pixels_2x.jpg"
+  },
+  {
+    "title": "Dribbbler Player Cards",
+    "description": "Dribbbler player cards is an image generator that creates a sports-like card that includes stats, such as total Likes, post views, and follower count. This app was built using <strong>React</strong>, <strong>Node.js</strong>, and <strong>Dribbble's</strong> <strong>API</strong> for AUTH and data",
+    "link": "https://dribbbler-players-card.netlify.app/",
+    "image": "https://images.ctfassets.net/04iiozfw14yr/59GS1phengPeZgccOO93lU/3a825d7308e905de5aa778ee29c25505/dribbbler_2x.jpg"
+  },
+  {
+    "title": "Digital Me",
+    "description": "Digital Me is a place where you can upload, promote, and feature important links so your customers and audience can find you online. Digitalme was built using <strong>PHP</strong> and <strong>MySql</strong> for the backend and powered by <strong>Vanilla</strong> <strong>JS</strong> for the frontend. With this project I built a login system and the ability to reset your password. You would also be able to create, remove, update, and delete links that were shared on your profile.",
+    "link": "https://digitalme.space/u/ispykenny",
+    "image": "https://images.ctfassets.net/04iiozfw14yr/1jy12QaOOYk60u05e3HRTa/995a13dc5ef0c6e4efd153d38d018dc7/digitalme_2x.jpg"
+  },
+  {
+    "title": "Minimal To Do List",
+    "description": "Minimal To Do List is a simple To Do List tool built using React. Data is stored in a localStorage so if I user refreshes the page they won't need to recreate their to do list. This project is hosted on Netlify.",
+    "link": "https://minimaltodolist.com/",
+    "image": "https://images.ctfassets.net/04iiozfw14yr/5uTcpolR0nimFE1DnA3UbT/2283d79768ad72dc3b7384709ce27eb6/Minimal_To_Do_List_2x.jpg"
+  }
+]
