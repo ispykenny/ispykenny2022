@@ -9,8 +9,6 @@ import { SmartContent } from 'components/sections/SmartContent/SmartContent';
 export const getStaticProps = async () => {
   const endpointResponse = await fetch(process.env.URL+'aboutme');
   const responseToJson = await endpointResponse.json();
-  console.log(responseToJson, 'here about me')
-
   return { 
     props: {
       pageData: responseToJson.fields 
