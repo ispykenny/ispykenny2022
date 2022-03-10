@@ -4,10 +4,9 @@ import { SEO } from '../components/Seo'
 import { Products } from 'components/sections/Products/Products';
 
 
-export const getStaticProps : GetStaticProps = async () => {
+export const getStaticProps : GetStaticProps = async (context) => {
   const endpointResponse = await fetch(process.env.URL+'homepage');
   const responseToJson = await endpointResponse.json();
-
   return { 
     props: {
       pageData: responseToJson.fields 
