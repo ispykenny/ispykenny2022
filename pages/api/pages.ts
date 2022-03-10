@@ -22,5 +22,9 @@ export default async function handler(
     return entry.items;
   })
   const post = entries.find((entry : any) => entry.fields.header.toLowerCase().split(' ').join('') === page)
-  res.status(200).json(post)
+  if(post) {
+    res.status(200).json(post)
+  } else {
+    res.status(404)
+  }
 }
