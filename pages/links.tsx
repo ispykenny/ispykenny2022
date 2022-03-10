@@ -6,7 +6,7 @@ import { SEO } from 'components/Seo';
 import { NextPage } from 'next';
 
 
-export const Links : NextPage = () => {
+const Links : NextPage = () => {
   return (
     <>
       <SEO 

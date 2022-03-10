@@ -3,7 +3,7 @@ import { Sleeve } from 'components/elements/Sleeve/Sleeve';
 import { Container } from 'components/layouts/Grid/Grid';
 import { NextPage } from 'next';
 
-export const Blogs: NextPage = () => {
+const Blogs: NextPage = () => {
   return (
     <Container 
       narrow={true}

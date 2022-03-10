@@ -9,6 +9,7 @@ import { SmartContent } from 'components/sections/SmartContent/SmartContent';
 export const getStaticProps = async () => {
   const endpointResponse = await fetch(process.env.URL+'aboutme');
   const responseToJson = await endpointResponse.json();
+  console.log(responseToJson, 'here about me')
 
   return { 
     props: {
@@ -17,7 +18,7 @@ export const getStaticProps = async () => {
   }
 }
 
-export const AboutMe: NextPage <any> = ({pageData}) => {
+const AboutMe: NextPage <any> = ({pageData}) => {
   return (
     <>
       <SEO 
