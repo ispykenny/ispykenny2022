@@ -12,7 +12,6 @@ interface Props {
 
 
 export const Hero : NextPage <Props> = ({pageTitle, pageTitleContent}) => {
-
   const lazyStyles = {
     marginTop: `2em`
   }
@@ -35,8 +34,8 @@ export const Hero : NextPage <Props> = ({pageTitle, pageTitleContent}) => {
           <div style={lazyStyles}>
             <Button 
               type="primary"
-              url="https://github.com/ispykenny"
-              text="Let's Connect"  
+              url="/about-me"
+              text="Learn More"  
             />
           </div>
         </div>

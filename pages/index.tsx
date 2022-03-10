@@ -1,22 +1,29 @@
-import type { NextPage } from 'next'
+import { NextPage } from 'next'
 import { Hero } from '../components/sections/Hero/Hero';
 import { SEO } from '../components/Seo'
 import { Products } from 'components/sections/Products/Products';
 
-const data = {
-  pageTitle: "Hello, I'm Kenny Krosky. I'm a Software Engineer & Designer",
-  pageTitleContent: "I'm a family man (3 kids), coffee obsessed, an amateur woodworker. I'm passionate about all things Front-end, specifically <strong>JavaScipt</strong>, <strong>CSS</strong>, and <strong>APIs</strong>. Currently a Senior software engineer at <strong>Microsoft</strong>, previously <strong>Adobe</strong>."
+
+export const getStaticProps = async () => {
+  const endpointResponse = await fetch(process.env.URL+'homepage');
+  const responseToJson = await endpointResponse.json();
+
+  return { 
+    props: {
+      pageData: responseToJson.fields 
+    }
+  }
 }
 
 
-const Home: NextPage <any> = ({theData}) => {
+const Home: NextPage <any> = ({pageData}) => {
   return (
     <>
       <SEO 
-        title="Home Page"
-        description="This page is the home page of ispykenny"
+        title={pageData.header}
+        description={pageData.seoSummary}
       />
-      <Hero {...data}/>
+      <Hero {...pageData}/>
       <Products/> 
     </>
   )

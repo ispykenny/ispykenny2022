@@ -1,4 +1,4 @@
-import type {NextPage} from 'next';
+import type { NextPage } from 'next';
 import Head from 'next/head';
 
 
@@ -8,12 +8,11 @@ interface SeoProps {
 }
 
 
-export const SEO: NextPage<SeoProps> = ({title, description}) => {
+export const SEO: NextPage <SeoProps> = ({title, description}) => {
   return (
     <Head>
-      <title>{title}</title>
+      <title>{`Kenny Krosky ${title}`}</title>
       <meta name="description" content={description} />
-      <link rel="icon" href="/favicon.ico" />
     </Head>
   )
 }

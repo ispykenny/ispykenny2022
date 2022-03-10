@@ -1,7 +1,7 @@
 @import '/styles/helpers/vars';
 
 .socials {
-  padding: 1em 0em 4em 0em;
+  padding: 1em 0em 0em 0em;
   margin: 0;
   list-style-type: none;
   display: flex;
@@ -33,7 +33,14 @@
     text-decoration: none;
     color: $green;
     border-radius: 10px;
-    display: flex;
+    display: inline-flex;
+    position: relative;
+
+
+    &:hover {
+      color: $tan;
+      transition: color .3s ease;
+    }
 
     span {
       margin-right: 10px;

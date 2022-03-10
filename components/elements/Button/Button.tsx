@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import { InView } from 'react-intersection-observer';
 import styles from '../Button/Button.module.scss';
 import { useState } from 'react';
+import Link from 'next/link';
 interface Props {
   type: string,
   url: string,
@@ -37,7 +38,8 @@ export const Button: NextPage <Props> = ({ type, url, text }) => {
       onChange={(inView) => inView && setButtonInView(true)}
       className={setClass()}
       >
-        <a href={url} className={getButtonClass(type)}>
+        <Link href={url}>
+        <a className={getButtonClass(type)}>
           <span>{text}</span>
           {type === 'secondary' && (
             <span>
@@ -45,6 +47,7 @@ export const Button: NextPage <Props> = ({ type, url, text }) => {
             </span>
           )}
         </a>
+        </Link>
       </InView>
     </>
   )

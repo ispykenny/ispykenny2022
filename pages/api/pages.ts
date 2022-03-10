@@ -9,7 +9,7 @@ type Data = {
 
 const client = contentful.createClient({
   space: process.env.SPACE,
-  accessToken: process.env.KANNACOCMSAPI,
+  accessToken: process.env.API,
 });
 
 export default async function handler(
