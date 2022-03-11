@@ -5,7 +5,7 @@ import { Products } from 'components/sections/Products/Products';
 
 
 export const getStaticProps : GetStaticProps = async () => {
-  const endpointResponse = await fetch(process.env.URL+'homepage');
+  const endpointResponse = await fetch('https://ispykenny-api.herokuapp.com/homepage');
   const responseToJson = await endpointResponse.json();
 
   return { 
@@ -14,8 +14,7 @@ export const getStaticProps : GetStaticProps = async () => {
     }
   }
 }
-
-
+// https://budgetingcards.com/api/?pageData=
 const Home: NextPage <any> = ({pageData}) => {
   return (
     <>
