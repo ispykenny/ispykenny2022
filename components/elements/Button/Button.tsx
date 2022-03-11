@@ -3,10 +3,12 @@ import { InView } from 'react-intersection-observer';
 import styles from '../Button/Button.module.scss';
 import { useState } from 'react';
 import Link from 'next/link';
+import { ScreenReader } from '../ScreenReader/ScreenReader';
 interface Props {
   type: string,
   url: string,
-  text: string
+  text: string,
+  sr: string
 }
 
 const getButtonClass = (type : string) => {
@@ -20,7 +22,7 @@ const getButtonClass = (type : string) => {
   }
 }
 
-export const Button: NextPage <Props> = ({ type, url, text }) => {
+export const Button: NextPage <Props> = ({ type, url, text, sr }) => {
   const [ButtonInView, setButtonInView] = useState(false)
 
   const setClass = () => {
@@ -40,6 +42,7 @@ export const Button: NextPage <Props> = ({ type, url, text }) => {
       >
         <Link href={url}>
         <a className={getButtonClass(type)}>
+          <ScreenReader label={sr}/>
           <span>{text}</span>
           {type === 'secondary' && (
             <span>

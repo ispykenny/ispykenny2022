@@ -47,22 +47,22 @@ export const Nav:NextPage = () => {
             </div>
             <div 
               className={styles.navEl}>
-              <nav className={` ${styles.navMenu} ${showingUl && styles.showingUl}`}>
+              <nav className={`${styles.navMenu} ${showingUl && styles.showingUl}`}>
                 <ul className={styles.navUl}>
                   <li>
-                    <Link href="/about-me"><a href="#" onClick={closeNav}>About me</a></Link>
+                    <Link href="/about-me"><a onClick={closeNav}>About me</a></Link>
                   </li>
                   <li>
-                    <Link href="/links"><a href="#" onClick={closeNav}>My Socials</a></Link>
+                    <Link href="/links"><a onClick={closeNav}>My Socials</a></Link>
                   </li>
                   <li>
                     <Link href="/blogs">
-                      <a href="#" onClick={closeNav}>Blogs</a>
+                      <a onClick={closeNav}>Blogs</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="mailto:kenny.krosky@gmail.com?subject=Email%20from%20your%20website">
-                      <a href="mailto:kenny.krosky@gmail.com?subject=Email%20from%20your%20website" onClick={closeNav}>
+                      <a onClick={closeNav}>
                         Get in Touch 👋
                       </a>
                     </Link>

@@ -4,17 +4,7 @@ import { SEO } from '../components/Seo'
 import { Products } from 'components/sections/Products/Products';
 
 
-export const getStaticProps : GetStaticProps = async () => {
-  const endpointResponse = await fetch('https://ispykenny-api.herokuapp.com/homepage');
-  const responseToJson = await endpointResponse.json();
 
-  return { 
-    props: {
-      pageData: responseToJson.fields 
-    }
-  }
-}
-// https://budgetingcards.com/api/?pageData=
 const Home: NextPage <any> = ({pageData}) => {
   return (
     <>
@@ -28,5 +18,15 @@ const Home: NextPage <any> = ({pageData}) => {
   )
 }
 
+export const getStaticProps : GetStaticProps = async () => {
+  const endpointResponse = await fetch('https://ispykenny-api.herokuapp.com/homepage');
+  const responseToJson = await endpointResponse.json();
+
+  return { 
+    props: {
+      pageData: responseToJson.fields 
+    }
+  }
+}
 
 export default Home

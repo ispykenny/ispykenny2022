@@ -14,15 +14,13 @@ const AboutMe: NextPage <any> = ({pageData}) => {
         title={pageData.header}
         description={pageData.seoSummary}
       />
-      <section>
-        <Container narrow={true} hasShimmy={true}>
-          <PageTitle>
-            <Sleeve text={pageData.pageTitle} delay={90}/>
-          </PageTitle>
-          <Socials/>
-          <SmartContent richText={pageData.smartContent}/>
-        </Container>
-      </section>
+      <Container narrow={true} hasShimmy={true}>
+        <PageTitle>
+          <Sleeve text={pageData.pageTitle} delay={90}/>
+        </PageTitle>
+        <Socials/>
+        <SmartContent richText={pageData.smartContent}/>
+      </Container>
     </>
   )
 }

@@ -33,6 +33,7 @@ export const Hero : NextPage <Props> = ({pageTitle, pageTitleContent}) => {
           </p>
           <div style={lazyStyles}>
             <Button 
+              sr="Learn More About Me, Kenny Krosky"
               type="primary"
               url="/about-me"
               text="Learn More"  
