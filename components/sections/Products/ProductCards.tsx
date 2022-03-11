@@ -33,7 +33,11 @@ export const ProductCards = ({title, description, link} : PROPS) => {
               delay={6}
               />
           </p>
-          <Button type='secondary' url={link} text="Visit Project"/>
+          <Button 
+            sr={`Visit my ${title} project!`}
+            type='secondary' 
+            url={link} 
+            text="Visit Project"/>
         </div>
       </div>
       </InView>
