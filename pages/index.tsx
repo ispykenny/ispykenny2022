@@ -19,7 +19,7 @@ const Home: NextPage <any> = ({pageData}) => {
 }
 
 export const getStaticProps : GetStaticProps = async () => {
-  const endpointResponse = await fetch('https://ispykenny-api.herokuapp.com/homepage');
+  const endpointResponse = await fetch(`${process.env.URL}/page/homepage`);
   const responseToJson = await endpointResponse.json();
 
   return { 

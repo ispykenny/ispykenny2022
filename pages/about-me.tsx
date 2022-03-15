@@ -19,7 +19,7 @@ const AboutMe: NextPage <any> = ({pageData}) => {
           <Sleeve text={pageData.pageTitle} delay={90}/>
         </PageTitle>
         <Socials/>
-        <SmartContent richText={pageData.smartContent}/>
+        <SmartContent richText={pageData.smartContent} hasSleeved={true}/>
       </Container>
     </>
   )

@@ -1,0 +1,23 @@
+.BlogHomeTitle {
+  margin: 0 0 2em 0;
+}
+
+.blogList {
+  margin-bottom: 4em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #ddd;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.blogContent {
+  padding-bottom: 4em;
+}
+
+.viewAll {
+  margin-bottom: 2em;
+  display: inline-block;
+  color: inherit;
+}
