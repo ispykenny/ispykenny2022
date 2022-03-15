@@ -33,7 +33,6 @@ export const BlogListings: NextPage <any> = ({content}) => {
       </h2>
       <SmartContent richText={content.excerpt}/>
       <Button 
-        animate={false}
         sr={`Read more about ${content.seoTitle}`}
         type="secondary"
         text="Read More"
