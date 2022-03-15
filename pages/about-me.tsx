@@ -27,7 +27,7 @@ const AboutMe: NextPage <any> = ({pageData}) => {
 
 
 export const getStaticProps : GetStaticProps = async () => {
-  const endpointResponse = await fetch('https://ispykenny-api.herokuapp.com/aboutme');
+  const endpointResponse = await fetch('https://ispykenny-api.herokuapp.com/page/aboutme');
   const responseToJson = await endpointResponse.json();
   return { 
     props: {
